@@ -25,7 +25,6 @@ Entsprechend Einstellungen in index.js muss er eine Datenbank "Project" mit dem 
 
 ## Schema der Datenbanktabellen
 
-
 ```
 CREATE TABLE Employee (
     personalid SERIAL PRIMARY KEY,
@@ -77,6 +76,7 @@ VALUES
     ('2024-06-04 08:30:00', '2024-06-04 17:30:00', '2024-01-04', 4, 8),
     ('2024-06-05 09:00:00', '2024-06-05 16:00:00', '2024-01-05', 5, 8);
 ```
+
 `
 `
 
@@ -84,7 +84,7 @@ VALUES
 
 Die GET-Methode `/init` erzeugt zwei Nutzer in der Tabelle `Employee`.
 
-Anschließend ist es möglich sich auf ```/login``` mit diesen Daten einzuloggen:
+Anschließend ist es möglich sich auf `/login` mit diesen Daten einzuloggen:
 
 ### Admin (Kann CSV downloaden)
 
@@ -104,18 +104,17 @@ Zum Schluss die Methode "init" wegkommentieren, zur Sicherheit.
 
 # Benutzen
 
-
 ## Zeiten eingeben
 
-1. Zu ```/dashboard```  gehen
+1. Zu `/dashboard` gehen
 2. Hier Zeiten wie eine Mitarbeiter eingeben
 
-    2.1. Z.B. Startzeit: "2024-06-01 08:00:00"
+   2.1. Z.B. Startzeit: "2024-06-01 08:00:00"
 
-    2.2. Z.B: Endzeit: "2024-06-01 16:00:00"
+   2.2. Z.B: Endzeit: "2024-06-01 16:00:00"
 
-    2.3. Projekt auswählen
+   2.3. Projekt auswählen
 
-    2.4. Auf "Speichern" klicken
+   2.4. Auf "Speichern" klicken
 
-3. Es wird nochmal auf ```/dashboard``` geleitet, das Formular ist wieder leer.
+3. Es wird nochmal auf `/dashboard` geleitet, das Formular ist wieder leer.
